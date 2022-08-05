@@ -1,0 +1,30 @@
+/* .home{
+    height: 100vh;
+    background-image: url('../../../public/images/bgstelar2.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+} */
+
+.home {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(26, 25, 25, 0.7)),
+    url("../../../public/images/bgstelar2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100vh;
+  height: 100vh;
+}
+
+.algo{
+    padding: 18%;
+}
+
+.name{
+    font-weight: bold;
+    font-size: 4rem !important;
+}
+
+.button{
+    background: transparent;
+    border-radius: 0%;
+}
+
