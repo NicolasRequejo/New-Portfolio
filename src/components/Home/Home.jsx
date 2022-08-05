@@ -14,7 +14,6 @@ export default function Home() {
   //const element = <FontAwesomeIcon icon={faCoffee} />;
   return (
     <section className="home">
-    
       <section>
         <span className="stars"></span>
         <span className="stars"></span>
@@ -27,19 +26,26 @@ export default function Home() {
         <span className="stars"></span>
         <span className="stars"></span>
       </section>
-      <div className="container">
-        <div className="is-flex is-flex-direction-column is-align-items-center algo">
-          <span className="has-text-info is-size-3 has-text-weight-bold">
-            HOLA, SOY
-          </span>
-          <h1 className="has-text-white name ">Nicolás Requejo</h1>
-          <span className="has-text-white is-family-code has-text-weight-light is-size-5 mt-5">
-            | FULL-STACK WEB DEVELOPER |
-          </span>
-          <button className="button is-medium is-responsive has-text-primary-light mt-6">
-            MÁS SOBRE MI <FontAwesomeIcon icon={faAngleDown} className="ml-3" />
-          </button>
-          <div style={{ marginTop: "30%" }}>
+      <div className="columns is-multiline">
+        <div className="column is-12">
+          <div className="is-flex is-flex-direction-column is-align-items-center algo">
+            <span className="has-text-info is-size-3 has-text-weight-bold">
+              HOLA, SOY
+            </span>
+            <h1 className="has-text-white name has-text-centered">
+              Nicolás Requejo
+            </h1>
+            <span className="has-text-white is-family-code has-text-weight-light is-size-5 mt-5">
+              | FULL-STACK WEB DEVELOPER |
+            </span>
+            <button className="button is-medium is-responsive has-text-primary-light mt-6">
+              MÁS SOBRE MI{" "}
+              <FontAwesomeIcon icon={faAngleDown} className="ml-3" />
+            </button>
+          </div>
+        </div>
+        <div className="column is-12" style={{marginTop: "100px"}}>
+          <div className="has-text-centered">
             <a
               href="https://www.linkedin.com/in/victor-nicolas-requejo-882a63222/"
               target="blank"
