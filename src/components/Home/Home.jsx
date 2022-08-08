@@ -44,7 +44,7 @@ export default function Home() {
             </button>
           </div>
         </div>
-        <div className="column is-12" style={{marginTop: "100px"}}>
+        <div className="column is-12" style={{marginTop: "150px"}}>
           <div className="has-text-centered">
             <a
               href="https://www.linkedin.com/in/victor-nicolas-requejo-882a63222/"

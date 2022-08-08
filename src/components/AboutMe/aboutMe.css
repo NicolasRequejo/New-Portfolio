@@ -1,0 +1,33 @@
+.textMe{
+    padding: 3% 15% 15% 15%;
+}
+
+.img-skills {
+  width: 60px;
+  height: 60px;
+  margin: 10%;
+  transition: 0.4s;
+}
+.img-skills:hover {
+  cursor: pointer;
+  width: 65px;
+  height: 65px;
+}
+ .p_skills {
+  margin-bottom: -5px;
+  color: #3e8ed0;
+  text-align: center;
+}
+/*
+.li_skills {
+  list-style: none;
+  display: inline-block;
+  margin-left: 50px;
+}
+.containerSkill {
+  text-align: center;
+  width: 90%;
+  height: 50%;
+  margin: 0;
+  margin-left: 3%;
+} */
