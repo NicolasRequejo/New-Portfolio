@@ -25,18 +25,28 @@ export default function Navbar() {
           className="navbar-dropdown is-boxed downdrop"
           style={{ display: burgerState ? "none" : "block" }}
         >
-          <a
+          <button
             className="navbar-item has-text-white"
-            href="https://bulma.io/documentation/overview/start/"
+            
+            onClick={() => {
+              document
+                .getElementById("about")
+                .scrollIntoView({ behavior: "smooth" });
+            }}
           >
-            Overview
-          </a>
-          <a
+            SOBRE MI
+          </button>
+          <button
             className="navbar-item has-text-white"
-            href="https://bulma.io/documentation/overview/modifiers/"
+            
+            onClick={() => {
+              document
+                .getElementById("projects")
+                .scrollIntoView({ behavior: "smooth" });
+            }}
           >
-            Modifiers
-          </a>
+            PROJECTS
+          </button>
           <a
             className="navbar-item has-text-white"
             href="https://bulma.io/documentation/columns/basics/"
