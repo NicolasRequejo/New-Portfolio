@@ -1,13 +1,30 @@
-import React from "react";
+import React,{useState} from "react";
 import "./projects.css";
 import Card from "./Card";
 import projects from "../../utils/projects";
 import Fade from "react-reveal/Fade";
 import Carousel from "react-elastic-carousel";
+import { useLayoutEffect } from "react";
 
 
 
 export default function Projects() {
+  
+  const [size, setSize] = useState(0);
+  function useWindowSize() {
+    useLayoutEffect(() => {
+      function updateSize() {
+        setSize(window.innerWidth);
+      }
+      window.addEventListener("resize", updateSize);
+      updateSize();
+      return () => window.removeEventListener("resize", updateSize);
+    }, []);
+    return size;
+  }
+
+  useWindowSize()
+
   return (
     <section style={{ backgroundColor: "#e8e8e8" }} id="projects">
       <div className=" container has-text-centered">
@@ -21,8 +38,22 @@ export default function Projects() {
         </Fade>
 
         <div className="rec rec-arrow">
-          <Carousel verticalMode itemsToShow={2}>
-            {projects.map((project, i) => {
+          {size > 551 ? (
+            <Carousel verticalMode itemsToShow={2}>
+              {projects.map((project, i) => {
+                return i % 2 === 0 ? (
+                  <Fade top right key={i + 1} delay={750}>
+                    <Card project={project} key={i} />
+                  </Fade>
+                ) : (
+                  <Fade top left key={i + 1} delay={750}>
+                    <Card project={project} key={i} />
+                  </Fade>
+                );
+              })}
+            </Carousel>
+          ) : (
+            projects.map((project, i) => {
               return i % 2 === 0 ? (
                 <Fade top right key={i + 1} delay={750}>
                   <Card project={project} key={i} />
@@ -32,8 +63,8 @@ export default function Projects() {
                   <Card project={project} key={i} />
                 </Fade>
               );
-            })}
-          </Carousel>
+            })
+          )}
         </div>
       </div>
 

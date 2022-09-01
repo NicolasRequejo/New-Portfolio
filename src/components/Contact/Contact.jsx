@@ -4,6 +4,8 @@ import image from "../../utils/images/img-01.png";
 import "./contact.css";
 import Fade from "react-reveal/Fade";
 import { Zoom } from "react-reveal";
+import swal from "sweetalert";
+
 
 export default function Contact() {
   const sendEmail = (e) => {
@@ -18,11 +20,12 @@ export default function Contact() {
       )
       .then(
         (result) => {
-          alert("Mensaje enviado! Gracias")
+          swal("Mensaje enviado!", "Gracias por ponerte en contacto!", "success");
           console.log(result);
+          console.log(e.target)
         },
         (error) => {
-          alert("Oh oh! HUbo un error");
+          alert("Oh oh! Hubo un error");
           console.log(error);
         }
       );
@@ -31,7 +34,10 @@ export default function Contact() {
   };
 
   return (
-    <div className="container pb-6 mt-6">
+    <div
+      className="container mt-6"
+      style={{ paddingBottom: "62px" }}
+    >
       <Zoom>
         <div className="columns is-multiline cardy">
           <div className="column is-12">
@@ -52,7 +58,7 @@ export default function Contact() {
               delay={750}
               style={{ margin: "inherit" }}
             >
-              <img src={image} alt="" srcset="" />
+              <img src={image} alt="Mail" />
             </Fade>
           </div>
           <div className="column is-7 mt-6">

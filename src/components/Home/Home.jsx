@@ -50,9 +50,13 @@ export default function Home() {
 
             <Zoom>
               <button
-                style={{borderRadius: "23px"}}
+                style={{ borderRadius: "23px" }}
                 className="button is-medium is-responsive has-text-primary-light mt-6"
-                onClick={()=>{document.getElementById("about").scrollIntoView({behavior:"smooth"});}}
+                onClick={() => {
+                  document
+                    .getElementById("about")
+                    .scrollIntoView({ behavior: "smooth" });
+                }}
               >
                 MÁS SOBRE MI{" "}
                 <FontAwesomeIcon icon={faAngleDown} className="ml-3" />
@@ -60,12 +64,12 @@ export default function Home() {
             </Zoom>
           </div>
         </div>
-        
+
         <div className="column is-12" style={{ marginTop: "150px" }}>
           <Jump forever={true} duration={2000}>
             <div className="has-text-centered">
               <a
-                href="https://www.linkedin.com/in/victor-nicolas-requejo-882a63222/"
+                href="https://www.linkedin.com/in/victor-nicolas-requejo/"
                 target="blank"
               >
                 <FontAwesomeIcon
