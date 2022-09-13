@@ -17,6 +17,7 @@ function Footer() {
           , todos los derechos reservados.
         </p>
       </div>
+      
     </footer>
   );
 }

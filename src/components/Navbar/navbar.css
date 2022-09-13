@@ -4,11 +4,40 @@
     margin-top: 10px;
 }
 
-.navbar-link,.navbar-link:hover{
+.icon-style{
     background: transparent !important;
     border: none;
 }
-.downdrop{
+/* .downdrop{
     opacity: 1 !important;
     background-color: rgba(0, 0, 0, 0.8);
+} */
+/* .downdrop {
+    opacity: 1 !important;
+    background-color: transparent;
+    position: fixed;
+    top: 52px !important;
+    left: 20px;
+    box-shadow: none!important;
+} */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  top: 20px !important;
 }
+
+.dropdown-content {
+  
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  min-width: 130px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+a{
+    font-family: Roboto Mono,monospace;
+}
+

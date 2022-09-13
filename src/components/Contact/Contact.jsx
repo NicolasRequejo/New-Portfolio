@@ -37,6 +37,7 @@ export default function Contact() {
     <div
       className="container mt-6"
       style={{ paddingBottom: "62px" }}
+      id="contact"
     >
       <Zoom>
         <div className="columns is-multiline cardy">
