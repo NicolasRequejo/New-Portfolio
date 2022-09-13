@@ -24,19 +24,25 @@ export default function AboutMe() {
                     className="has-text-info is-size-1 has-text-weight-bold mb-6"
                     style={{ borderBottom: "solid" }}
                   >
-                    SOBRE MÍ
+                    SOBRE MI
                   </h1>
                 </Fade>
 
-                <p className="has-text-white has-text-justified textMe is-size-5">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Quibusdam consequatur eveniet consequuntur, iure et blanditiis
-                  voluptatem debitis quas totam! Possimus dicta esse nam
-                  laudantium qui magnam, odio maxime et asperiores amet quod
-                  architecto? Laborum eum alias maiores doloremque debitis enim
-                  id porro odio voluptate, nam iste mollitia sapiente rem,
-                  ducimus hic nulla? Itaque alias fugiat, ducimus tenetur aut
-                  voluptatibus vitae.
+                <p className="has-text-white has-text-left textMe is-size-4">
+                  Hola! Soy Nico, Full Stack Web Developer, apasionado por el
+                  front-end y por la docencia.
+                   <br />
+                  Actualmente soy mentor en
+                  un bootcamp de programación, donde formamos futuros devs.
+                  <br />
+                  Participo en distintos proyectos freelance.
+                  <br /> En mis tiempos
+                  libres me gusta seguir capacitandome y jugar videojuegos.
+                  {/* Empecé mi
+                  formación en 2021 de manera autodidacta, luego realicé cursos
+                  de html5, css3, git y un curso introductorio de programación.
+                  Luego realicé un Coding Bootcamp en Plataforma5 (curso
+                  intensivo de 800 hs).  */}
                 </p>
               </div>
             </div>

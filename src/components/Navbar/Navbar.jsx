@@ -25,7 +25,7 @@ export default function Navbar() {
           className="navbar-dropdown is-boxed downdrop"
           style={{ display: burgerState ? "none" : "block" }}
         >
-          <button
+          <a
             className="navbar-item has-text-white"
             
             onClick={() => {
@@ -35,8 +35,8 @@ export default function Navbar() {
             }}
           >
             SOBRE MI
-          </button>
-          <button
+          </a>
+          <a
             className="navbar-item has-text-white"
             
             onClick={() => {
@@ -46,7 +46,7 @@ export default function Navbar() {
             }}
           >
             PROJECTS
-          </button>
+          </a>
           <a
             className="navbar-item has-text-white"
             href="https://bulma.io/documentation/columns/basics/"

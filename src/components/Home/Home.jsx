@@ -51,7 +51,7 @@ export default function Home() {
             <Zoom>
               <button
                 style={{ borderRadius: "23px" }}
-                className="button is-medium is-responsive has-text-primary-light mt-6"
+                className="button is-medium  has-text-primary-light mt-6"
                 onClick={() => {
                   document
                     .getElementById("about")
@@ -65,7 +65,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="column is-12" style={{ marginTop: "150px" }}>
+        <div className="column is-12 redes">
           <Jump forever={true} duration={2000}>
             <div className="has-text-centered">
               <a
