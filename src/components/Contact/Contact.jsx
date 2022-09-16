@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import image from "../../utils/images/img-01.png";
 import "./contact.css";
@@ -6,8 +6,12 @@ import Fade from "react-reveal/Fade";
 import { Zoom } from "react-reveal";
 import swal from "sweetalert";
 
-
 export default function Contact() {
+  const form = useRef();
+  const user_name = useRef();
+  const user_email = useRef();
+  const user_message = useRef();
+
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -15,22 +19,25 @@ export default function Contact() {
       .sendForm(
         "service_npddkzg",
         "template_q9aythp",
-        e.target,
+        form.current,
         "aktGiZiTxctkK-awg"
       )
       .then(
         (result) => {
-          swal("Mensaje enviado!", "Gracias por ponerte en contacto!", "success");
-          console.log(result);
-          console.log(e.target)
+          swal(
+            "Mensaje enviado!",
+            "Gracias por ponerte en contacto!",
+            "success"
+          );
+          user_email.current.value=""
+          user_name.current.value = "";
+          user_message.current.value = "";
+
         },
         (error) => {
-          alert("Oh oh! Hubo un error");
-          console.log(error);
+          swal("oh oh, hubo un error!", "Contactame por Linkedin!", "error");
         }
       );
-
-      e.target = ""
   };
 
   return (
@@ -63,7 +70,7 @@ export default function Contact() {
             </Fade>
           </div>
           <div className="column is-7 mt-6">
-            <form onSubmit={sendEmail}>
+            <form ref={form} onSubmit={sendEmail}>
               <div className="field">
                 <Fade top cascade delay={750}>
                   <label
@@ -75,11 +82,13 @@ export default function Contact() {
                 </Fade>
                 <div className="control">
                   <input
+                    ref={user_name}
                     className="inputt"
                     type="text"
                     id="name"
                     placeholder="Tu nombre ..."
                     name="user_name"
+                    // onChange={handleChange}
                   />
                 </div>
               </div>
@@ -95,11 +104,13 @@ export default function Contact() {
                 </Fade>
                 <div className="control">
                   <input
+                    ref={user_email}
                     type="email"
                     className="inputt"
                     id="email"
                     placeholder="Tu email ..."
                     name="user_email"
+                    // onChange={handleChange}
                   />
                 </div>
               </div>
@@ -115,12 +126,14 @@ export default function Contact() {
                 </Fade>
                 <div className="control">
                   <textarea
+                    ref={user_message}
                     className="inputt"
                     id="message"
                     cols="30"
                     rows="10"
                     placeholder="Hola nico, me comunico ..."
                     name="user_message"
+                    // onChange={handleChange}
                   ></textarea>
                 </div>
               </div>
@@ -141,3 +154,4 @@ export default function Contact() {
     </div>
   );
 }
+

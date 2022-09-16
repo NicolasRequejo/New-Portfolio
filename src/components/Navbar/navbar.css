@@ -8,18 +8,6 @@
     background: transparent !important;
     border: none;
 }
-/* .downdrop{
-    opacity: 1 !important;
-    background-color: rgba(0, 0, 0, 0.8);
-} */
-/* .downdrop {
-    opacity: 1 !important;
-    background-color: transparent;
-    position: fixed;
-    top: 52px !important;
-    left: 20px;
-    box-shadow: none!important;
-} */
 
 .dropdown {
   position: relative;

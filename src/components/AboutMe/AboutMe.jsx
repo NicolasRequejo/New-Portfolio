@@ -16,10 +16,10 @@ export default function AboutMe() {
     >
       <article className="container">
         <div className="columns is-multiline">
-          <Fade left bottom cascade>
+          <Fade left bottom cascade >
             <div className="column is-6 has-text-centered mt-6">
               <div className="cardy">
-                <Fade top cascade delay={750}>
+                <Fade top cascade delay={500}>
                   <h1
                     className="has-text-info is-size-1 has-text-weight-bold mb-6"
                     style={{ borderBottom: "solid" }}
@@ -29,10 +29,10 @@ export default function AboutMe() {
                 </Fade>
 
                 <p className="has-text-white has-text-left textMe is-size-4">
-                  Hola! Soy Nico, Full Stack Web Developer, apasionado por el
+                  ¡Hola! Soy Nico, Full Stack Web Developer, apasionado por el
                   front-end y por la docencia.
                    <br />
-                  Actualmente soy mentor en
+                  Actualmente, soy mentor en
                   un bootcamp de programación, donde formamos futuros devs.
                   <br />
                   Participo en distintos proyectos freelance.
@@ -51,7 +51,7 @@ export default function AboutMe() {
           <Fade right top cascade>
             <div className="column is-6 has-text-centered mt-6">
               <div className="cardy">
-                <Fade left top cascade delay={750}>
+                <Fade left top cascade delay={500}>
                   <h1
                     className="has-text-info is-size-1 has-text-weight-bold mb-6"
                     style={{ borderBottom: "solid" }}

@@ -8,9 +8,9 @@ export default function Navbar() {
   return (
     <>
       <nav className="navbar is-transparent position">
-        <div class="dropdown">
+        <div className="dropdown">
           <button
-            className="icon-style"
+            className="icon-style is-clickable"
             href="#"
             onClick={() => {
               setBurgerState(!burgerState);
@@ -23,11 +23,11 @@ export default function Navbar() {
             />
           </button>
           <div
-            class="dropdown-content"
+            className="dropdown-content"
             style={{ display: burgerState ? "none" : "block" }}
           >
-            <a
-              className="navbar-item has-text-info"
+            <span
+              className="navbar-item has-text-info is-clickable"
               onClick={() => {
                 document
                   .getElementById("about")
@@ -36,9 +36,9 @@ export default function Navbar() {
               }}
             >
               SOBRE MI
-            </a>
-            <a
-              className="navbar-item has-text-info"
+            </span>
+            <span
+              className="navbar-item has-text-info is-clickable"
               onClick={() => {
                 document
                   .getElementById("projects")
@@ -46,10 +46,10 @@ export default function Navbar() {
                 setBurgerState(!burgerState);
               }}
             >
-              PROJECTS
-            </a>
-            <a
-              className="navbar-item has-text-info"
+              PROYECTOS
+            </span>
+            <span
+              className="navbar-item has-text-info is-clickable"
               onClick={() => {
                 document
                   .getElementById("contact")
@@ -58,56 +58,10 @@ export default function Navbar() {
               }}
             >
               CONTACTO
-            </a>
+            </span>
           </div>
         </div>
-        {/* <div className="navbar-item has-dropdown ">
-          <button
-            className="navbar-link is-arrowless"
-            href="#"
-            onClick={() => {
-              setBurgerState(!burgerState);
-            }}
-          >
-            <FontAwesomeIcon
-              icon={faAlignJustify}
-              className="has-text-info ml-3"
-              size="2x"
-            />
-          </button>
-        </div> */}
       </nav>
-      {/* <div
-        className="navbar-dropdown is-boxed downdrop"
-        style={{ display: burgerState ? "none" : "block" }}
-      >
-        <a
-          className="navbar-item has-text-white"
-          onClick={() => {
-            document
-              .getElementById("about")
-              .scrollIntoView({ behavior: "smooth" });
-          }}
-        >
-          SOBRE MI
-        </a>
-        <a
-          className="navbar-item has-text-white"
-          onClick={() => {
-            document
-              .getElementById("projects")
-              .scrollIntoView({ behavior: "smooth" });
-          }}
-        >
-          PROJECTS
-        </a>
-        <a
-          className="navbar-item has-text-white"
-          href="https://bulma.io/documentation/columns/basics/"
-        >
-          Columns
-        </a>
-      </div> */}
     </>
   );
 }

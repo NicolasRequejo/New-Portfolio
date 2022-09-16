@@ -1,7 +1,7 @@
 import React from "react";
 import "./home.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
+import { faAngleDown, faFilePdf} from "@fortawesome/free-solid-svg-icons";
 import {
   faLinkedinIn,
   faGithub,
@@ -12,6 +12,7 @@ import {
 import Fade from "react-reveal/Fade";
 import Jump from "react-reveal/Jump";
 import Zoom from "react-reveal/Zoom";
+import cv from "../../utils/nicolas-requejocv.pdf"
 
 export default function Home() {
   
@@ -48,20 +49,33 @@ export default function Home() {
               </span>
             </Fade>
 
-            <Zoom>
-              <button
-                style={{ borderRadius: "23px" }}
-                className="button is-medium  has-text-primary-light mt-6"
-                onClick={() => {
-                  document
-                    .getElementById("about")
-                    .scrollIntoView({ behavior: "smooth" });
-                }}
-              >
-                MÁS SOBRE MI{" "}
-                <FontAwesomeIcon icon={faAngleDown} className="ml-3" />
-              </button>
-            </Zoom>
+            <div className="is-flex is-flex-direction-row">
+              <Zoom>
+                <button
+                  style={{ borderRadius: "23px" }}
+                  className="button is-medium  has-text-primary-light mt-6 mr-3"
+                  onClick={() => {
+                    document
+                      .getElementById("about")
+                      .scrollIntoView({ behavior: "smooth" });
+                  }}
+                >
+                  MÁS SOBRE MI{" "}
+                  <FontAwesomeIcon icon={faAngleDown} className="ml-3" />
+                </button>
+              </Zoom>
+              <Zoom>
+                <a
+                  style={{ borderRadius: "23px" }}
+                  className="button is-medium  has-text-primary-light mt-6"
+                  href={cv}
+                  target="blank"
+                >
+                  CURRICULUM
+                  <FontAwesomeIcon icon={faFilePdf} className="ml-3" />
+                </a>
+              </Zoom>
+            </div>
           </div>
         </div>
 

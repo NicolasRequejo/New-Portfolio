@@ -42,11 +42,11 @@ export default function Projects() {
             <Carousel verticalMode itemsToShow={2}>
               {projects.map((project, i) => {
                 return i % 2 === 0 ? (
-                  <Fade top right key={i + 1} delay={750}>
+                  <Fade top right key={i + 1} delay={400}>
                     <Card project={project} key={i} />
                   </Fade>
                 ) : (
-                  <Fade top left key={i + 1} delay={750}>
+                  <Fade top left key={i + 1} delay={400}>
                     <Card project={project} key={i} />
                   </Fade>
                 );
@@ -55,11 +55,11 @@ export default function Projects() {
           ) : (
             projects.map((project, i) => {
               return i % 2 === 0 ? (
-                <Fade top right key={i + 1} delay={750}>
+                <Fade top right key={i + 1} delay={400}>
                   <Card project={project} key={i} />
                 </Fade>
               ) : (
-                <Fade top left key={i + 1} delay={750}>
+                <Fade top left key={i + 1} delay={400}>
                   <Card project={project} key={i} />
                 </Fade>
               );

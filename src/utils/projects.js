@@ -2,7 +2,18 @@ const sneakers = require("./images/plataforma-sneakers.png");
 const movies = require("./images/nrmovies.png");
 const turnero = require("./images/turneroweb.png");
 const mimo = require("./images/mimo.png");
+const building = require("./images/building.png")
 const projects = [
+  {
+    name: "BuildingApps",
+    description:
+      "BuildingApps es una aplicación para liquidar expensas, en este proyecto realizo el desarrollo de nuevas vistas y sus funcionalidades. Participo como miembro de FluffyDevelopers.",
+    stack: ["HTML5", "CSS3", "SASS", "Vue", "Vuex", "Bulma", "PHP", "MySql"],
+    img: building,
+    alt: "buildingapp",
+    url: "https://buildingapps.com.ar/",
+    gith: null,
+  },
   {
     name: "Mimoweb",
     description:
@@ -16,6 +27,7 @@ const projects = [
       "Bulma",
       "PHP",
       "Web socket",
+      "MySql",
     ],
     img: mimo,
     alt: "mimoweb",
@@ -45,7 +57,7 @@ const projects = [
   {
     name: "NR Movies",
     description:
-      "NRMovies es un proyecto de práctica que consiste en la creación de una Página de peliculas desde c consumiendo la API TMDB (the movie data base) en el que me desem como Full Stack Dev. La idea principal es poner en práctic visto en el módulo nivelatorio y el módulo de formación.",
+      "NRMovies es un proyecto de práctica que consiste en la creación de una página de peliculas desde cero consumiendo la API TMDB (the movie data base) en el que me desempeño como Full Stack Dev. La idea principal es poner en práctica lo visto en el módulo nivelatorio y el módulo de formación.",
     stack: [
       "HTML5",
       "CSS3",
