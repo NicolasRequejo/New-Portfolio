@@ -38,11 +38,7 @@ export default function AboutMe() {
                   Participo en distintos proyectos freelance.
                   <br /> En mis tiempos
                   libres me gusta seguir capacitandome y jugar videojuegos.
-                  {/* Empecé mi
-                  formación en 2021 de manera autodidacta, luego realicé cursos
-                  de html5, css3, git y un curso introductorio de programación.
-                  Luego realicé un Coding Bootcamp en Plataforma5 (curso
-                  intensivo de 800 hs).  */}
+                  
                 </p>
               </div>
             </div>

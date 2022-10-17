@@ -15,29 +15,40 @@ export default function Contact() {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_npddkzg",
-        "template_q9aythp",
-        form.current,
-        "aktGiZiTxctkK-awg"
-      )
-      .then(
-        (result) => {
-          swal(
-            "Mensaje enviado!",
-            "Gracias por ponerte en contacto!",
-            "success"
-          );
-          user_email.current.value=""
-          user_name.current.value = "";
-          user_message.current.value = "";
-
-        },
-        (error) => {
-          swal("oh oh, hubo un error!", "Contactame por Linkedin!", "error");
-        }
+    if (
+      user_name.current.value === "" ||
+      user_email.current.value === "" ||
+      user_message.current.value === ""
+    ) {
+      swal(
+        "Por favor, completa todos los datos para ponerte en contacto!",
+        "Gracias!",
+        "error"
       );
+    } else {
+      emailjs
+        .sendForm(
+          "service_npddkzg",
+          "template_q9aythp",
+          form.current,
+          "aktGiZiTxctkK-awg"
+        )
+        .then(
+          (result) => {
+            swal(
+              "Mensaje enviado!",
+              "Gracias por ponerte en contacto!",
+              "success"
+            );
+            user_email.current.value = "";
+            user_name.current.value = "";
+            user_message.current.value = "";
+          },
+          (error) => {
+            swal("oh oh, hubo un error!", "Contactame por Linkedin!", "error");
+          }
+        );
+    }
   };
 
   return (
@@ -86,6 +97,7 @@ export default function Contact() {
                     className="inputt"
                     type="text"
                     id="name"
+                    maxlength="30"
                     placeholder="Tu nombre ..."
                     name="user_name"
                     // onChange={handleChange}
@@ -108,6 +120,7 @@ export default function Contact() {
                     type="email"
                     className="inputt"
                     id="email"
+                    maxlength="35"
                     placeholder="Tu email ..."
                     name="user_email"
                     // onChange={handleChange}
@@ -131,6 +144,7 @@ export default function Contact() {
                     id="message"
                     cols="30"
                     rows="10"
+                    maxlength="300"
                     placeholder="Hola nico, me comunico ..."
                     name="user_message"
                     // onChange={handleChange}
@@ -154,4 +168,3 @@ export default function Contact() {
     </div>
   );
 }
-

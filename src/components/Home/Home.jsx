@@ -12,7 +12,7 @@ import {
 import Fade from "react-reveal/Fade";
 import Jump from "react-reveal/Jump";
 import Zoom from "react-reveal/Zoom";
-import cv from "../../utils/nicolas-requejocv.pdf"
+import cv from "../../utils/nicolas-requejoCv.pdf"
 
 export default function Home() {
   
@@ -80,7 +80,7 @@ export default function Home() {
         </div>
 
         <div className="column is-12 redes">
-          <Jump forever={true} duration={2000}>
+          <Jump count={3} duration={2000}>
             <div className="has-text-centered">
               <a
                 href="https://www.linkedin.com/in/victor-nicolas-requejo/"
