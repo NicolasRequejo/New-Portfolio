@@ -97,7 +97,7 @@ export default function Contact() {
                     className="inputt"
                     type="text"
                     id="name"
-                    maxlength="30"
+                    maxLength="30"
                     placeholder="Tu nombre ..."
                     name="user_name"
                     // onChange={handleChange}
@@ -120,7 +120,7 @@ export default function Contact() {
                     type="email"
                     className="inputt"
                     id="email"
-                    maxlength="35"
+                    maxLength="35"
                     placeholder="Tu email ..."
                     name="user_email"
                     // onChange={handleChange}
@@ -144,7 +144,7 @@ export default function Contact() {
                     id="message"
                     cols="30"
                     rows="10"
-                    maxlength="300"
+                    maxLength="300"
                     placeholder="Hola nico, me comunico ..."
                     name="user_message"
                     // onChange={handleChange}

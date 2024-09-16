@@ -12,7 +12,9 @@ import {
 import Fade from "react-reveal/Fade";
 import Jump from "react-reveal/Jump";
 import Zoom from "react-reveal/Zoom";
-import cv from "../../utils/nicolas-requejoCv.pdf"
+
+// import filePdf from "../../utils/curriculum-Nicolas-Requejo.pdf"
+
 
 export default function Home() {
   
@@ -68,8 +70,9 @@ export default function Home() {
                 <a
                   style={{ borderRadius: "23px" }}
                   className="button is-medium  has-text-primary-light mt-6"
-                  href={cv}
-                  target="blank"
+                  href="/curriculum-Nicolas-Requejo.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   CURRICULUM
                   <FontAwesomeIcon icon={faFilePdf} className="ml-3" />
@@ -99,13 +102,7 @@ export default function Home() {
                   size="2x"
                 />
               </a>
-              <a href="https://github.com/NicolasRequejo" target="blank">
-                <FontAwesomeIcon
-                  icon={faGithub}
-                  className="has-text-white ml-6"
-                  size="2x"
-                />
-              </a>
+              
               <a
                 href="https://api.whatsapp.com/send?phone=+543512161073"
                 target="blank"

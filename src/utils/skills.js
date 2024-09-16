@@ -15,15 +15,41 @@ const skills = [
     alt: "img_JavaScript",
   },
   {
-    name: "Bootstrap",
-    img: "https://portfolio-franco-mino.vercel.app/images/imgSkills/bootstrap-5-1.98585727.svg",
-    alt: "img_Bootstrap",
+    name: "React",
+    img: "https://seeklogo.com/images/R/react-logo-7B3CE81517-seeklogo.com.png",
+    alt: "img_React",
   },
+  {
+    name: "Next",
+    img: "https://i.pinimg.com/736x/32/9a/d8/329ad85f4ab2047cae13d582274f9270.jpg",
+    alt: "img_Next",
+  },
+  {name: "Angular",
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1200px-Angular_full_color_logo.svg.png",
+    alt: "img_Angular",
+  },
+  {
+    name: "Vue",
+    img: "https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg",
+    alt: "img_SASS",
+  },
+  
   {
     name: "NodeJS",
     img: "https://portfolio-franco-mino.vercel.app/images/imgSkills/node.svg",
     alt: "img_NodeJS",
   },
+  {
+    name: "TypeScript",
+    img: "https://img.icons8.com/?size=160&id=Xf1sHBmY73hA&format=png",
+    alt: "img_TypeScript",
+  },
+  {
+    name: "OctoberCMS",
+    img: "https://upload.wikimedia.org/wikipedia/commons/4/41/OctoberCMS.png",
+    alt: "img_OctoberCMS",
+  },
+  
   {
     name: "Sequelize",
     img: "https://seeklogo.com/images/S/sequelize-logo-9A5075DB9F-seeklogo.com.png",
@@ -44,11 +70,7 @@ const skills = [
     img: "https://portfolio-franco-mino.vercel.app/images/imgSkills/postman.e65afafe.svg",
     alt: "img_Postman",
   },
-  {
-    name: "React",
-    img: "https://bineo-consulting.com/assets/svg/logos/react.svg",
-    alt: "img_React",
-  },
+  
   {
     name: "Material Ui",
     img: "https://cdn.worldvectorlogo.com/logos/material-ui-1.svg",
@@ -60,19 +82,19 @@ const skills = [
     alt: "img_Bulma",
   },
   {
-    name: "GIT",
-    img: "https://portfolio-franco-mino.vercel.app/images/imgSkills/git-logo2.430db756.png",
-    alt: "img_GIT",
-  },
-  {
-    name: "Vue",
-    img: "https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg",
-    alt: "img_SASS",
+    name: "Bootstrap",
+    img: "https://portfolio-franco-mino.vercel.app/images/imgSkills/bootstrap-5-1.98585727.svg",
+    alt: "img_Bootstrap",
   },
   {
     name: "SASS",
     img: "https://upload.wikimedia.org/wikipedia/commons/9/96/Sass_Logo_Color.svg",
     alt: "img_SASS",
+  },
+  {
+    name: "GIT",
+    img: "https://portfolio-franco-mino.vercel.app/images/imgSkills/git-logo2.430db756.png",
+    alt: "img_GIT",
   },
 ];
 

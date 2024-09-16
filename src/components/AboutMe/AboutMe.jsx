@@ -29,16 +29,18 @@ export default function AboutMe() {
                 </Fade>
 
                 <p className="has-text-white has-text-left textMe is-size-4">
-                  ¡Hola! Soy Nico, Full Stack Web Developer, apasionado por el
-                  front-end y por la docencia.
-                   <br />
-                  Actualmente, soy mentor en
-                  un bootcamp de programación, donde formamos futuros devs.
-                  <br />
-                  Participo en distintos proyectos freelance.
-                  <br /> En mis tiempos
-                  libres me gusta seguir capacitandome y jugar videojuegos.
-                  
+                 
+                  El que hace que las cosas funcionen: Soy Nicolás Requejo,
+                  desarrollador fullstack.
+                  <br /> 
+                  <br /> 
+                  Me gusta hacer que las cosas
+                  funcionen, ya sea creando algo nuevo o mejorando algo que
+                  ya existe. He trabajado en varios proyectos, principalmente
+                  en equipos ágiles, y siempre me esfuerzo por mantener las
+                  cosas simples y eficientes. Soy amigable, me gusta trabajar
+                  en equipo y siempre tengo una idea para resolver cualquier
+                  problema.
                 </p>
               </div>
             </div>
